@@ -23,7 +23,7 @@ def start_game(event):
         file1.close()
         score.configure(text="Score: 00\n\nHighscore: " + highscore)
         canvas.delete("all")
-        BALL_COLOR = ["blue", "yellow", "black"]
+        BALL_COLOR = ["blue", "yellow", "white"]
         BRICK_COLOR = ["PeachPuff3", "dark slate gray", "rosy brown", "light goldenrod yellow", "turquoise3", "salmon",
                        "light steel blue", "dark khaki"]
         random.shuffle(BALL_COLOR)
@@ -92,6 +92,6 @@ def start_game(event):
 
 # Initial text in screen (x,y), and Start Button
 root.bind_all("<Return>", start_game)
-canvas.create_text(250, 250, text="Press Enter to start Game!!", fill="red", font="Consolas 18")
+canvas.create_text(250, 420, text="Press Enter to start Game!!", fill="red", font="Consolas 18")
 root.mainloop()
         
